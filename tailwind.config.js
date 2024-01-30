@@ -9,12 +9,24 @@ export default {
         extend: {
             colors: {
                 background: {
-                    DEFAULT: "#FFFFFF",
-                    dark: "#292a4d",
+                    DEFAULT: "#f0f0f0",
+                    dark: "#151528",
                     navbar: {
                         DEFAULT: "#FFFFFF",
                         dark: "#292a4d"
                     }
+                },
+                searchbar: {
+                    DEFAULT: "#f0f0f0",
+                    dark: "#454781",
+                    icon: {
+                        DEFAULT: "#4b4e8d",
+                        dark: "#FFFFFF"
+                    }
+                },
+                content: {
+                    DEFAULT: "#FFFFFF",
+                    dark: "#292a4d"
                 },
                 button: {
                     DEFAULT: "#454781",
