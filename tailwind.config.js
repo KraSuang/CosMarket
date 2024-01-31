@@ -151,6 +151,12 @@ export default {
                             }
                         },
                     }
+                },
+                filter: {
+                    background: {
+                        DEFAULT: "#FFFFFF",
+                        dark: ""
+                    }
                 }
             },
             fontFamily: {
