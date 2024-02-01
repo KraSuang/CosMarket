@@ -1,4 +1,11 @@
-import { DropdownFilter } from "../../components/Filter.tsx"
+import { DropdownCheckBoxFilter, DropdownButtonFilter } from "../../components/Filter.tsx"
+import { StockGrid } from "../../components/Content.tsx"
+import stockData from '../../../Tools/data/__test__/stock.json'
+import { BsSortAlphaDown, BsSortAlphaDownAlt, BsSortDown } from "react-icons/bs";
+// import { IconButton } from "../../components/Button.tsx"
+// import { IoGrid, IoGridOutline } from "react-icons/io5";
+// import { TfiLayoutListThumbAlt, TfiLayoutListThumb } from "react-icons/tfi";
+// import { useState } from "react";
 
 const fandom = [
     { id: 1, name: "Anime" },
@@ -29,27 +36,25 @@ const size = [
 ]
 
 const sortby = [
-    { id: 1, name: "Most Popular" },
-    { id: 2, name: "Top Rate" },
-    { id: 3, name: "A-Z" },
-    { id: 4, name: "Z-A" },
+    { id: 1, name: "Top Rate", icon: <BsSortDown />},
+    { id: 2, name: "A-Z", icon: <BsSortAlphaDown />},
+    { id: 3, name: "Z-A", icon: <BsSortAlphaDownAlt />},
 ]
 
 export default function Content() {
     return (
         <>
             <div className={`block w-full h-fit`}>
-                <div className={`flex w-full h-fit justify-center items-center`}>
-                    <DropdownFilter title={`Fandom`} items={fandom} />
-                    <DropdownFilter title={`Version`} items={version} />
-                    <DropdownFilter title={`Category`} items={category} />
-                    <DropdownFilter title={`Size`} items={size} />
-                    <DropdownFilter title={`Sort`} items={sortby} />
+                <div className={`flex w-full h-fit justify-center z-50 items-center`}>
+                    <DropdownCheckBoxFilter title={`Fandom`} items={fandom} />
+                    <DropdownCheckBoxFilter title={`Version`} items={version} />
+                    <DropdownCheckBoxFilter title={`Category`} items={category} />
+                    <DropdownCheckBoxFilter title={`Size`} items={size} />
+                    <DropdownButtonFilter title={`Sort`} items={sortby} />
                 </div>
-                <div className={`flex w-full h-fit`}>
-                    <div className={`flex w-full h-fit justify-center items-start`}>
-                        <div className={`my-4 grid grid-cols-5 gap-2`}>
-                        </div>
+                <div className={`flex w-full h-fit mt-8 z-0 justify-center`}>
+                    <div className={`flex w-fit h-fit justify-center items-start`}>
+                        <StockGrid data={stockData}/>
                     </div>
                 </div>
             </div>
