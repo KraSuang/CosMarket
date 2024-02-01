@@ -155,8 +155,28 @@ export default {
                 filter: {
                     background: {
                         DEFAULT: "#FFFFFF",
-                        dark: ""
-                    }
+                        dark: "",
+                        hover: {
+                            DEFAULT: "",
+                            dark: ""
+                        },
+                        selected: {
+                            DEFAULT: "#454781",
+                            dark: ""
+                        }
+                    },
+                    text: {
+                        DEFAULT: "#4b4e8d", //Light 4b4e8d // Dark 454781
+                        dark: "#FFFFFF",
+                        hover: {
+                            DEFAULT: "#FFFFFF",
+                            dark: "#151528"
+                        },
+                        selected: {
+                            DEFAULT: "#FFFFFF",
+                            dark: ""
+                        }
+                    },
                 }
             },
             fontFamily: {
