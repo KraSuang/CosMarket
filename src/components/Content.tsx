@@ -1,6 +1,5 @@
 import Rating from '@mui/material/Rating';
 
-
 interface StockDataProps {
     data: {
         id: number;
@@ -92,7 +91,7 @@ export function StockGrid({ data, ...rest }: StockDataProps) {
     return (
         <div className={`grid grid-cols-4 gap-5`}>
             {data.map((item) => (
-                <div className={`block w-full h-fit bg-white rounded-xl ${designConfig.stock_div} shadow-md relative`}>
+                <div className={`block w-full h-fit bg-white rounded-xl ${designConfig.stock_div} shadow-md relative transition-all duration-200 hover:scale-[1.02]`} {...rest}>
                     <img
                         key={`${item.uid}-${item.sid}-${item.id}`}
                         className={`w-full h-full ${designConfig.stock_img} rounded-xl`}
