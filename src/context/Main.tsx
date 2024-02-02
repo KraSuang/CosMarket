@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from '../components/Navbar.tsx'
 import Content from './Pages/Content.tsx'
+import { StockDetail } from './Pages/Detail.tsx'
 export default function Main() {
     return (
         <>
@@ -9,6 +10,7 @@ export default function Main() {
                 <div className={`block w-full h-fit px-10 pt-16 pb-10`}>
                     <Routes>
                         <Route path='/' element={<Content />}/>
+                        <Route path="/detail/:id" element={<StockDetail />} />
                     </Routes>
                 </div>
             </div>
