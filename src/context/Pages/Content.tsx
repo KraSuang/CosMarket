@@ -1,6 +1,6 @@
 import { DropdownCheckBoxFilter, DropdownButtonFilter } from "../../components/Filter.tsx"
 import { StockGrid } from "../../components/Content.tsx"
-import stockData from '../../../Tools/data/__test__/stock.json'
+import stockData from '../../../Tools/data/__test__/primary_stock.json'
 import { BsSortAlphaDown, BsSortAlphaDownAlt, BsSortDown } from "react-icons/bs";
 // import { IconButton } from "../../components/Button.tsx"
 // import { IoGrid, IoGridOutline } from "react-icons/io5";
@@ -45,7 +45,7 @@ export default function Content() {
     return (
         <>
             <div className={`block w-full h-fit`}>
-                <div className={`flex w-full h-fit justify-center z-50 items-center`}>
+                <div className={`flex w-full h-fit justify-center z-40 items-center`}>
                     <DropdownCheckBoxFilter title={`Fandom`} items={fandom} />
                     <DropdownCheckBoxFilter title={`Version`} items={version} />
                     <DropdownCheckBoxFilter title={`Category`} items={category} />

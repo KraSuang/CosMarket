@@ -1,5 +1,5 @@
 import Rating from '@mui/material/Rating';
-
+import { Link } from 'react-router-dom'
 
 interface StockDataProps {
     data: {
@@ -83,7 +83,7 @@ export function StockStatus({ status }: StockStatusProps) {
     }
 }
 
-export function StockGrid({ data, ...rest }: StockDataProps) {
+export function StockGrid({ data }: StockDataProps) {
     const designConfig = {
         stock_div: "max-w-[300px]",
         stock_img: "max-w-[300px] max-h-[400px]"
@@ -92,15 +92,15 @@ export function StockGrid({ data, ...rest }: StockDataProps) {
     return (
         <div className={`grid grid-cols-4 gap-5`}>
             {data.map((item) => (
-                <div className={`block w-full h-fit bg-white rounded-xl ${designConfig.stock_div} shadow-md relative`}>
+                <Link key={item.id} to={`/detail/${item.id}`} className={`block w-full h-fit bg-white rounded-xl ${designConfig.stock_div} shadow-md relative transition-all duration-200 hover:scale-[1.02]`}>
                     <img
                         key={`${item.uid}-${item.sid}-${item.id}`}
                         className={`w-full h-full ${designConfig.stock_img} rounded-xl`}
-                        src={`Tools/data/__test__/image/${item.uid}-${item.sid}-${item.id}-1.jpg`}
+                        src={`../Tools/data/__test__/image/${item.uid}-${item.sid}-${item.id}-1.jpg`}
                         alt={`${item.uid}-${item.sid}-${item.id}`}
                     />
                     <div className={`block w-full h-fit pb-2 px-3`}>
-                        <p className={`text-md text-text`}>{`${item.detail.name} ${item?.detail?.version?  `| ${item?.detail?.version}` : ``}`}</p>
+                        <p className={`text-md text-text`}>{`${item.detail.name} ${item?.detail?.version ? `| ${item?.detail?.version}` : ``}`}</p>
                         <p className={`text-3xs -mt-2 text-text`}>{item.detail.title}</p>
                         <p className={`text-md text-red-500 my-1`}>{`${item.detail.price.min}-${item.detail.price.max}฿`}</p>
                         <div className={`flex w-full h-fit justify-start items-center`}>
@@ -114,7 +114,7 @@ export function StockGrid({ data, ...rest }: StockDataProps) {
                     <div className={`absolute -top-4 -right-4 flex min-w-10 h-10 px-3 shadow-md justify-center items-center rounded-full bg-white text-text text-xs font-medium`}>
                         {item.detail.costume.detail.size.overall}
                     </div>
-                </div>
+                </Link>
             ))}
         </div>
     );

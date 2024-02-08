@@ -15,7 +15,7 @@ interface DropdownButtonFilterProps {
 
 export function DropdownCheckBoxFilter({ title, items }: DropdownCheckBoxFilterProps) {
     return (
-        <Menu as="div" className="relative inline-block text-left mx-2 z-50">
+        <Menu as="div" className="relative inline-block text-left mx-2 z-40">
             <div>
                 <Menu.Button className={`inline-flex w-full justify-center rounded-lg bg-filter-background transition-all duration-200 group px-4 py-1.5 shadow-md items-center`}>
                     <p className={`transition-all duration-200 text-5xs text-text group-hover:scale-105`}>{title}</p>
@@ -53,7 +53,7 @@ export function DropdownButtonFilter({ title, items }: DropdownButtonFilterProps
 
     return (
         <Listbox value={selected} onChange={setSelected}>
-            <div className="relative mx-2">
+            <div className="relative mx-2 z-40">
                 <Listbox.Button className={`inline-flex relative w-full cursor-default rounded-lg bg-white py-1.5 px-4 text-left shadow-md justify-between sm:text-sm items-center`}>
                     <p className={`transition-all duration-200 text-5xs text-text group-hover:scale-105`}>{title}</p>
                     <FaAngleDown
