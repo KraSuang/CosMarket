@@ -68,6 +68,7 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={`flex w-1/3 h-fit justify-end items-center`}>
+                <DropdownProfileNav />
             </div>
         </header>
     )
