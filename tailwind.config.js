@@ -9,12 +9,24 @@ export default {
         extend: {
             colors: {
                 background: {
-                    DEFAULT: "#FFFFFF",
-                    dark: "#292a4d",
+                    DEFAULT: "#f0f0f0",
+                    dark: "#151528",
                     navbar: {
                         DEFAULT: "#FFFFFF",
                         dark: "#292a4d"
                     }
+                },
+                searchbar: {
+                    DEFAULT: "#f0f0f0",
+                    dark: "#454781",
+                    icon: {
+                        DEFAULT: "#4b4e8d",
+                        dark: "#FFFFFF"
+                    }
+                },
+                content: {
+                    DEFAULT: "#FFFFFF",
+                    dark: "#292a4d"
                 },
                 button: {
                     DEFAULT: "#454781",
@@ -139,6 +151,32 @@ export default {
                             }
                         },
                     }
+                },
+                filter: {
+                    background: {
+                        DEFAULT: "#FFFFFF",
+                        dark: "",
+                        hover: {
+                            DEFAULT: "",
+                            dark: ""
+                        },
+                        selected: {
+                            DEFAULT: "#454781",
+                            dark: ""
+                        }
+                    },
+                    text: {
+                        DEFAULT: "#4b4e8d", //Light 4b4e8d // Dark 454781
+                        dark: "#FFFFFF",
+                        hover: {
+                            DEFAULT: "#FFFFFF",
+                            dark: "#151528"
+                        },
+                        selected: {
+                            DEFAULT: "#FFFFFF",
+                            dark: ""
+                        }
+                    },
                 }
             },
             fontFamily: {
@@ -146,7 +184,8 @@ export default {
                 "Anuphan": ['Anuphan', 'sans-serif'],
                 "IBM": ['IBM Plex Sans Thai', 'sans-serif'],
                 "Baijam": ['Bai Jamjuree', 'sans-serif'],
-                "Prompt": ['Prompt', 'sans-serif']
+                "Prompt": ['Prompt', 'sans-serif'],
+                "JetBrains": ['JetBrains', 'sans-serif']
             },
             fontSize: {
                 'logo': '75px',
