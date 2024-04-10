@@ -184,7 +184,8 @@ export default {
                 "Anuphan": ['Anuphan', 'sans-serif'],
                 "IBM": ['IBM Plex Sans Thai', 'sans-serif'],
                 "Baijam": ['Bai Jamjuree', 'sans-serif'],
-                "Prompt": ['Prompt', 'sans-serif']
+                "Prompt": ['Prompt', 'sans-serif'],
+                "JetBrains": ['JetBrains', 'sans-serif']
             },
             fontSize: {
                 'logo': '75px',
