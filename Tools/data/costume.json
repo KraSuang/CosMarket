@@ -1,0 +1,42 @@
+{
+    "id": "",
+    "sid": "",
+    "uid": "",
+    "detail": {
+        "name": "",
+        "title": "",
+        "description": "",
+        "rate": 0,
+        "review": 0,
+        "wig": {
+            "status": true,
+            "seperate": {
+                "status": false,
+                "price": 0
+            }
+        },
+        "costume": {
+            "status": true,
+            "detail": {
+                "size": {
+                    "overall": "XL"
+                }
+            },
+            "seperate": {
+                "status": false,
+                "price": 0
+            }
+        },
+        "prop": {
+            "1": {
+                "status": true,
+                "pieces": 1,
+                "seperate": {
+                    "status": false
+                }
+            }
+        },
+        "picture": 10,
+        "status": ""
+    }
+}

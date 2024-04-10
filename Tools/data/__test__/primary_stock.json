@@ -1,0 +1,109 @@
+[
+    {
+        "id": 100000001,
+        "sid": 100001,
+        "uid": 100000001,
+        "detail": {
+            "name": "Kafka",
+            "title": "Honkai Star Rail",
+            "version": "",
+            "description": "ร้าน 1/3",
+            "rate": 4.5,
+            "review": 30,
+            "wig": {
+                "status": true,
+                "seperate": {
+                    "status": false,
+                    "price": 0
+                }
+            },
+            "costume": {
+                "status": true,
+                "detail": {
+                    "size": {
+                        "overall": "L",
+                        "detail": [
+                            {
+                                "type": 1,
+                                "min": 89,
+                                "max": 92
+                            },
+                            {
+                                "type": 2,
+                                "min": 71,
+                                "max": 74
+                            },
+                            {
+                                "type": 3,
+                                "min": 91,
+                                "max": 94
+                            }
+                        ],
+                        "unit": "cm"
+                    },
+                    "price": {
+                        "test": 400,
+                        "private": 550
+                    }
+                },
+                "seperate": {
+                    "status": false,
+                    "price": 0
+                }
+            },
+            "prop": {
+                "1": {
+                    "status": false,
+                    "pieces": 1,
+                    "seperate": {
+                        "status": false
+                    }
+                }
+            },
+            "picture": 1,
+            "status": 1,
+            "price": {
+                "min": 400,
+                "max": 550
+            }
+        },
+        "queue": [
+            {
+                "ident" : {
+                    "r_uid" : 100000001
+                },
+                "detail" : {
+                    "choose": {
+                        "costume" : true
+                    },
+                    "total_price" : {
+                        "rent_price" : 550,
+                        "del_price": 150
+                    },
+                    "duration" : {
+                        "start" : "2024-02-07",
+                        "end" : "2024-02-20"
+                    }
+                }
+            },
+            {
+                "ident" : {
+                    "r_uid" : 100000002
+                },
+                "detail" : {
+                    "choose": {
+                        "costume" : true
+                    },
+                    "total_price" : {
+                        "rent_price" : 550,
+                        "del_price": 150
+                    },
+                    "duration" : {
+                        "start" : "2024-02-21",
+                        "end" : "2024-02-25"
+                    }
+                }
+            }
+        ]
+    }
+]
