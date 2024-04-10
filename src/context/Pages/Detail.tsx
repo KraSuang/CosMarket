@@ -109,7 +109,7 @@ export const StockDetail: React.FC<StockDetailProps> = () => {
 
     return (
         <div className={`flex flex-col w-full h-fit px-20 py-10 items-center`}>
-            <div className={`flex w-full justify-center mb-8`}>
+            <div className={`flex w-full justify-between mb-8 max-w-[1200px]`}>
                 <div className={`w-fit bg-content rounded-2xl p-6`}>
                     <Carousel infiniteLoop={true} showStatus={false} width={700} autoPlay={true} dynamicHeight={false} showIndicators={true} showThumbs={false} transitionTime={500}>
                         {[...Array(stockItem?.detail.picture)].map((_, index) => (
@@ -123,7 +123,7 @@ export const StockDetail: React.FC<StockDetailProps> = () => {
                         ))}
                     </Carousel>
                 </div>
-                <div className={`flex flex-col justify-between w-fit min-w-[400px] pl-8`}>
+                <div className={`flex flex-col justify-between w-full pl-8`}>
                     <div className={`block w-full h-fit bg-content rounded-2xl px-6 py-2`}>
                         <p className='text-xl text-text'>{`${stockItem?.detail.name} ${stockItem?.detail?.version ? `| ${stockItem?.detail?.version}` : ``}`}</p>
                         <p className='text-xs -mt-2 text-text'>{stockItem?.detail.title}</p>
@@ -241,7 +241,7 @@ export const StockDetail: React.FC<StockDetailProps> = () => {
                                 pointer-events-none inline-block h-[28px] w-[50px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                     />
                                     <p className={`absolute top-[1.2px] left-[14px] transition-all duration-200 ${enabled ? `text-white` : `text-text`}`}>cm</p>
-                                    <p className={`absolute top-[1.5px] right-[9.5px] transition-all duration-200 ${enabled ? `text-text` : `text-white`}`}>inch</p>
+                                    <p className={`absolute top-[1.5px] right-[14px] transition-all duration-200 ${enabled ? `text-text` : `text-white`}`}>in</p>
                                 </Switch>
                             </div>
                         </div>
@@ -260,7 +260,7 @@ export const StockDetail: React.FC<StockDetailProps> = () => {
                         </div>
                 </div>
             </div>
-            <div className={`w-full h-fit bg-content rounded-2xl`}>
+            <div className={`w-full max-w-[1200px] h-fit bg-content rounded-2xl`}>
                 <ReadOnlyCalendar queue={stockItem?.queue}/>
             </div>
         </div>
